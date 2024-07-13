@@ -25,6 +25,16 @@ import random
 numero=random.randrange(1,100)
 cursos=["PYTHON","DJANGO","FLASK","MA"]
 curso=random.choice(cursos)
-print(curso)
+#print(curso)
 
 
+import sys
+
+print("Version de Python",sys.version)
+print("Informacion de la Version",sys.version_info)
+print("Plataforma",sys.platform)
+
+entrada=sys.stdin.read()
+print("Lo que se escribio fue",entrada)
+
+sys.exit()

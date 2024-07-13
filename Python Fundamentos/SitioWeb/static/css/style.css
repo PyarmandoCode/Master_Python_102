@@ -1,0 +1,15 @@
+body {
+    font-family: Arial,sans-serif;
+    background-color: bisque;
+    color: blue;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.0.1);
+}

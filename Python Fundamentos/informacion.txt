@@ -1,0 +1,4 @@
+En Python, puedes leer y escribir archivos de 
+texto utilizando la función incorporada open(). 
+A continuación se presentan ejemplos básicos de cómo leer 
+y escribir archivos de texto en Python.
