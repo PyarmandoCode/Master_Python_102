@@ -5,7 +5,7 @@ contactos=[]
 #Cargar los contactos desde un archivo JSON
 
 try:
-    with open('E:\Master_Python_102\Python Fundamentos\contactos.json','r') as file:
+    with open('./contactos.json','r') as file:
         contactos=json.load(file)
 except FileNotFoundError:
     print("El Archivo no se encontro")        
@@ -20,7 +20,7 @@ def ver_contactos():
 
 #Funcion para guardar los contactos en un archivo json
 def guardar_contactos():
-    with open('E:\Master_Python_102\Python Fundamentos\contactos.json','w') as file:
+  with open('./contactos.json','r') as file:
         json.dump(contactos,file,indent=4)
 
 #Añadir un contacto

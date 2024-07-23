@@ -1,4 +1,8 @@
 edad_persona = 23
+sueldo_persona=1200.56
+estado=True
+
+
 nombre_persona="Aquiles"
 curso="Master Python"
 #print(type(int(edad_persona)))

@@ -1,17 +1,13 @@
 [
     {
-        "nombre": "Juan Perez",
-        "telefono": "245-789",
-        "email": "juanperez@pyarmando.com"
+        "nombre":"Juan Perez",
+        "telefono":"245-789",
+        "email":"juanperez@pyarmando.com"
     },
     {
-        "nombre": "Maria Gomez",
-        "telefono": "954565-32435",
-        "email": "mgomez@pyarmando.com"
-    },
-    {
-        "nombre": "Armando",
-        "telefono": "234-566",
-        "email": "aruiz@gmail.com"
+        "nombre":"Maria Gomez",
+        "telefono":"954565-32435",
+        "email":"mgomez@pyarmando.com"
     }
+
 ]
