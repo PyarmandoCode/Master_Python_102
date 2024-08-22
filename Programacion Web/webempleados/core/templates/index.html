@@ -1,4 +1,33 @@
-<h1>Listado de Empleados Django 5.1</h1>
+{% extends 'base.html' %}
+{% block page_content %}
+ <div class="container">
+  <h2 class="my-4"> Nuestros Empleados</h2>
+  <div class="row">
+    {% for empleado in empleados %}
+       <div class="col-md-4 mb-4">
+         <div class="card">
+          {% if empleado.image_url %}
+            <img src="{{empleado.image_url}}" class="card-img-top">
+          {% else %} 
+            <img src="https://via.placeholder.com/150"class="card-img-top">
+          {% endif %} 
+            <div class="card-body">
+              <h5 class="card-title">{{empleado.nombre }} {{empleado.apellido }}</h5>
+              <p class="card-text">Correo:{{empleado.email }}</p>
+              <p class="card-text">Cargo:{{empleado.cargo }}</p>
+              <a href="{% url 'detalles' empleado.id %}" class="btn btn-primary">Ver Detalle</a>
+            </div>
+          </div>     
+        </div>   
+      {% endfor %}
+    </div>  
+  </h1>
+ </div> 
+
+{% endblock %}
+
+
+{% comment %} <h1>Listado de Empleados Django 5.1</h1>
 {% for empleado in empleados %}
   <p> {{empleado.nombre }} - {{empleado.apellido }}</p>
-{% endfor %} 
+{% endfor %}  {% endcomment %}

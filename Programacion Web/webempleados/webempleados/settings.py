@@ -74,6 +74,19 @@ DATABASES = {
     }
 }
 
+#pip install mysqlclient
+
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.mysql",
+#         "NAME": "databaseName",
+#         "USER": "databaseUser",
+#         "PASSWORD": "databasePassword",
+#         "HOST": "localhost",
+#         "PORT": "portNumber",
+#     }
+# }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators

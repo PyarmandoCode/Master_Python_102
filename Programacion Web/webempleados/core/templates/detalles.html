@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block page_content %}
+<div class="container">
+    <h2 class="my-4"> Nuestro Empleado</h2>
+    <div class="row">
+         <div class="col-md-4 mb-4">
+           <div class="card">
+            {% if empleado.image_url %}
+              <img src="{{empleado.image_url}}" class="card-img-top">
+            {% else %} 
+              <img src="https://via.placeholder.com/150"class="card-img-top">
+            {% endif %} 
+              <div class="card-body">
+                <h5 class="card-title">{{empleado.nombre }} {{empleado.apellido }}</h5>
+                <p class="card-text">Correo:{{empleado.email }}</p>
+                <p class="card-text">Cargo:{{empleado.cargo }}</p>
+                <a href="" class="btn btn-primary">Ver Detalle</a>
+              </div>
+            </div>     
+          </div>   
+      </div>  
+    </h1>
+   </div>
+{% endblock %}
